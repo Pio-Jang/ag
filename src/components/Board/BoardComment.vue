@@ -1,21 +1,21 @@
 <template>
-	<div class="board-comment">
-		<div class="comment-total">
-			<span class="total">댓글 999,999 개</span>
-			<div class="tab">
+	<div class="board-cmt">
+		<div class="cmt-option">
+			<span class="cmt-total"><IconComment></IconComment> <span>댓글 <strong>999,999</strong>개</span></span>
+			<div class="cmt-tab">
 				<router-link to="/" class="active">최신순</router-link>
 				<router-link to="/">인기순</router-link>
 			</div>
 		</div>
-		<ul class="comment-list">
-			<li>
-				<div class="comment-header">
+		<ul class="cmt-list">
+			<li class="cmt-list-item">
+				<div class="cmt-header">
 					<div class="thumb">
-						<img src="@/assets/images/icon_thumb.png" alt="">
+						<IconAvatar></IconAvatar>
 					</div>
 					<span class="tag">BEST</span>
 					<button type="button" class="nick"><span>감스트주보리우결단</span></button>
-					<div class="commnet-info">
+					<div class="cmt-info">
 						<IconLike></IconLike>
 						<span class="time dot">대 댓글</span>
 						<span class="time dot">16:29</span>
@@ -23,18 +23,61 @@
 						<button type="button" class="btn-more"><span>더보기</span></button>
 					</div>
 				</div>
-				<div class="comment-body">
+				<div class="cmt-body">
 					<p>무야호~~ 그만큼 우릴 호구로 보신단거지~~</p>
 				</div>
+				<ul class="cmt-list">
+					<li class="cmt-list-item">
+						<div class="cmt-header">
+							<div class="thumb">
+								<IconAvatar></IconAvatar>
+							</div>
+							<span class="tag">BEST</span>
+							<button type="button" class="nick"><span>감스트주보리우결단</span></button>
+							<div class="cmt-info">
+								<IconLike></IconLike>
+								<span class="time dot">대 댓글</span>
+								<span class="time dot">16:29</span>
+								<button type="button" class="dot"><span>신고</span></button>
+								<button type="button" class="btn-more"><span>더보기</span></button>
+							</div>
+						</div>
+						<div class="cmt-body">
+							<p>대댓글 영역이란 말이지</p>
+						</div>
+
+						<ul class="cmt-list">
+							<li class="cmt-list-item">
+								<div class="cmt-header">
+									<div class="thumb">
+										<IconAvatar></IconAvatar>
+									</div>
+									<span class="tag">BEST</span>
+									<button type="button" class="nick"><span>감스트주보리우결단</span></button>
+									<div class="cmt-info">
+										<IconLike></IconLike>
+										<span class="time dot">대 댓글</span>
+										<span class="time dot">16:29</span>
+										<button type="button" class="dot"><span>신고</span></button>
+										<button type="button" class="btn-more"><span>더보기</span></button>
+									</div>
+								</div>
+								<div class="cmt-body">
+									<p>대대댓글 영역이란 말이지</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</li>
-			<li>
-				<div class="comment-header">
+			<li class="cmt-list-item">
+				<div class="cmt-header">
 					<div class="thumb">
 						<img src="@/assets/images/icon_thumb.png" alt="">
 					</div>
 					<span class="tag">BEST</span>
 					<button type="button" class="nick"><span>감스트주보리우결단</span> <em>슈퍼 관종임</em></button>
-					<div class="commnet-info">
+					<div class="cmt-info">
 						<IconLike></IconLike>
 						<span class="time dot">대 댓글</span>
 						<span class="time dot">16:29</span>
@@ -42,18 +85,18 @@
 						<button type="button" class="btn-more"><span>더보기</span></button>
 					</div>
 				</div>
-				<div class="comment-body">
+				<div class="cmt-body">
 					<p>무야호~~ 그만큼 우릴 호구로 보신단거지~~</p>
 				</div>
 			</li>
-			<li class="block">
-				<div class="comment-header">
+			<li class="cmt-list-item block">
+				<div class="cmt-header">
 					<div class="thumb">
 						<img src="@/assets/images/icon_thumb.png" alt="">
 					</div>
 					<span class="tag">BEST</span>
 					<button type="button" class="nick"><span>감스트주보리우결단</span></button>
-					<div class="commnet-info">
+					<div class="cmt-info">
 						<IconLike></IconLike>
 						<span class="time dot">대 댓글</span>
 						<span class="time dot">16:29</span>
@@ -68,12 +111,12 @@
 						</button>
 					</div>
 				</div>
-				<div class="comment-body">
+				<div class="cmt-body">
 					<p>차단된 사용자의 글과 댓글은 보이지 않습니다.</p>
 				</div>
 			</li>
-			<li>
-				<div class="comment-header">
+			<li class="cmt-list-item">
+				<div class="cmt-header">
 					<div class="thumb">
 						<img src="@/assets/images/icon_thumb.png" alt="">
 					</div>
@@ -88,7 +131,7 @@
 							</ul>
 						</div>
 					</button>
-					<div class="commnet-info">
+					<div class="cmt-info">
 						<IconLike></IconLike>
 						<span class="time dot">대 댓글</span>
 						<span class="time dot">16:29</span>
@@ -96,30 +139,8 @@
 						<button type="button" class="btn-more"><span>더보기</span></button>
 					</div>
 				</div>
-				<div class="comment-body">
+				<div class="cmt-body">
 					<p>무야호~~ 그만큼 우릴 호구로 보신단거지~~</p>
-				</div>
-			</li>
-			<li>
-				<div class="comment-header">
-					<div class="thumb">
-						<img src="@/assets/images/icon_thumb.png" alt="">
-					</div>
-					<span class="tag">BEST</span>
-					<button type="button" class="nick"><span>감스트주보리우결단</span></button>
-					<div class="commnet-info">
-						<IconLike></IconLike>
-						<span class="time dot">대 댓글</span>
-						<span class="time dot">16:29</span>
-						<button type="button" class="dot"><span>신고</span></button>
-						<button type="button" class="btn-more"><span>더보기</span></button>
-					</div>
-				</div>
-				<div class="comment-body">
-					<p>무야호~~ 그만큼 우릴 호구로 보신단거지~~</p>
-				</div>
-				<div class="txt-edit" style="margin:0; height:100px">
-					<div>텍스트에디터 라인</div>
 				</div>
 			</li>
 		</ul>
@@ -127,66 +148,36 @@
 </template>
 
 <script>
-import IconLike from "./icon/IconLike.vue"
-// import IconComment from "./icon/IconComment.vue"
-// import IconView from "./icon/IconView.vue"
+import IconAvatar from "@/assets/icon/IconAvatar.vue"
+import IconComment from "@/assets/icon/IconComment.vue"
 export default {
-	name:'CommentList',
+	name:'cmtList',
 	components:{
-		IconLike
+		IconComment,
+		IconAvatar
 	}
 }
 </script>
 
 <style lang="scss" scoped>
 
-.comment-total{
+.cmt-option{
 	display: flex;
 	justify-content: space-between;
-	.total{
+	padding:0 10px;
+	.cmt-total{
 		display: flex;
-		&::before{
-			content: "";
-			display: block;
-			width: 20px;
-			height: 20px;
-			margin-right: 10px;
-			background: url('@/assets/images/icon/icon_comment_25.png') 0 0 no-repeat;
-			background-size: 100% 100%;
-		}
+		align-items: center;
+		font-size: $sf;
+		svg{width:18px; height: 18px; margin-right:5px;}
 	}
-	.tab{
-		a{font-size: 14px; border:0; padding:0 10px;
+	.cmt-tab{
+		a{font-size:$mf; border:0;
 			&.active{font-weight: bold;}
 			& + a {margin-left:10px;}
 		}
 	}
 }
-
-
-.comment-header{
-	display: flex;
-	justify-content: space-between;
-	.total{
-		display: flex;
-		&::before{
-			content: "";
-			display: block;
-			width: 20px;
-			height: 20px;
-			margin-right: 10px;
-			background: url('@/assets/images/icon/icon_comment_25.png') 0 0 no-repeat;
-			background-size: 100% 100%;
-		}
-	}
-	.tab{
-		a{font-size: 14px; border:0; padding:0 10px;
-			&.active{font-weight: bold;}
-			& + a {margin-left:10px;}
-		}
-	}
-}
-
 .txt-edit{
 	padding:20px;
 	display: flex;
@@ -197,25 +188,39 @@ export default {
 	border:solid 1px #333;
 }
 
-.comment-list{
-	li{margin-top:10px;
-		&.block .comment-body{color:#f51414;}
+.cmt-list{
+	margin-top:10px;
+	border-top:solid 1px #e1e1e1;
+	> .cmt-list-item{border:solid 1px #bbb; margin-top:10px;}
+	.cmt-list{
+		padding-left: 20px;
+		border-bottom:solid 1px #bbb;
+		&:last-child{border-bottom:0;}
+		.cmt-list-item{margin-top:0; border:0;}
 	}
-	.comment-header{
-		background: #eee;
-		padding:10px 20px;
-		border-radius: 10px 10px 0 0;
+		// &.block .cmt-body{color:#f51414;}
+	// .cmt-list-item{ margint-
+	// }
+	// ul {margin-left: 20px;
+	// 	li {border-top:solid 1px #bbb;}
+	// }
+	.cmt-header{
+		border-bottom:solid 1px #eee;
+		padding:10px 20px 5px;
 		display: flex;
 		justify-content: left;
 		align-items: center;
-		.thumb{width:40px; border-radius: 50%;
-			img{vertical-align: top; width:100%}
+		.thumb{width:30px; border-radius: 50%;
+			img{display: block; width: 100%;}
+			svg{width:24px;height: 24px; border:solid 1px #000; border-radius: 50%;}
 		}
-		.tag{padding:2px 10px; color:#fff; background: #fb8488; border-radius: 30px;margin-left: 10px; font-size: 12px;}
-		.nick{margin-left: 10px;
+		.tag{padding:2px 5px; color:#fff; background: #fb8488; border-radius: 30px;margin-left: 10px;font-size: 10px;}
+		.nick{
+			margin-left: 10px;
 			display: flex;
 			align-items: center;
 			position: relative;
+			font-size: 12px;
 			em{margin-left: 10px; color:#f51414;}
 			.layer-pop{
 				position: absolute;
@@ -227,7 +232,7 @@ export default {
 				li{margin:0; padding:5px 0; white-space: nowrap;}
 			}
 		}
-		.commnet-info{
+		.cmt-info{
 			margin-left: auto;
 			font-size:$sf;
 			display: flex;
@@ -242,7 +247,7 @@ export default {
 				&.btn-more{
 					font:0/0 a;
 					width: 20px; height: 20px;
-					background: url('@/assets/images/icon/ico_more.svg') 50% 50% no-repeat;
+					// background: url('@/assets/images/icon/ico_more.svg') 50% 50% no-repeat;
 					background-size: 15px 15px;
 					position: relative;
 					.layer-pop{
@@ -259,6 +264,6 @@ export default {
 			}
 		}
 	}
-	.comment-body{padding:20px; border:solid 1px #eee; border-radius:0 0 10px 10px;}
+	.cmt-body{padding:10px 20px;}
 }
 </style>
